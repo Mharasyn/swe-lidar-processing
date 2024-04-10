@@ -121,7 +121,7 @@ for (tif in all_tifs){
       raster_dens <- mosaic(HRU_density, raster_dens, fun = max) #mosaic HRU density rasters together to create full picture of basin
     }
     
-    writeRaster(raster_dens, paste0('outputs/swe/snYr', as.character(snowyear), '/', folder_name, '/density', tif), overwrite = TRUE) #output .tif of swe map
+    writeRaster(raster_dens, paste0('outputs/swe/snYr', as.character(snowyear), '/', folder_name, '/', tif), overwrite = TRUE) #output .tif of swe map
     
     raster_swe <- (raster_Hs * raster_dens) 
     writeRaster(raster_swe, paste0('outputs/swe/snYr', as.character(snowyear), '/', folder_name, '/', tif), overwrite = TRUE) #output .tif of swe map
