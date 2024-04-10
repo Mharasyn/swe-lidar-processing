@@ -1,5 +1,4 @@
 # Calculate basin-wide SWE using a linear regression of density measurements for each site (in situ) of snow across the whole basin, divided by season
-# Season cut off is spring equinox, estimated division between 'wet' and 'dry' snow
 # Created by Maddie Harasyn 2023/2024 (madison.harasyn@usask.ca)
 
 # load libraries
